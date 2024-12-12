@@ -1,0 +1,64 @@
+@import './reset.scss';
+// @import "./assets/fonts/index.scss";
+@import '../styles/variables/colors.scss';
+@import '../styles/variables/breakpoints.scss';
+@import './assets/mixins/responsive_font.scss';
+
+html {
+  font-family: 'Raleway', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  @include responsive-font(16, 10);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+  color: var(--color);
+  background-color: var(--bg);
+  transition:
+  color 0.25s ease-in-out 0s,
+  background-color 0.25s ease-in-out 0s;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+body {
+  position: sticky;
+  top: 0px;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 4000px;
+  height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#__next {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (max-width: $lg) {
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  -webkit-box-flex: 1;
+  overflow-y: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+@import '../../../styles/variables/system.scss';
+@import '../../../styles/variables/breakpoints.scss';
+@import '../../../styles/assets/mixins/responsive_font.scss';
+
+header.header {
+  margin: 6px;
+  padding: 12px 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: $borderRadiusSm;
+  background-color: var(--frame);
+  user-select: none;
+  transition: all 0.4s ease-in;
+}

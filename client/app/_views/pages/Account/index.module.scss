@@ -1,0 +1,47 @@
+@import '../../../styles/variables/system.scss';
+@import '../../../styles/variables/breakpoints.scss';
+@import '../../../styles/assets/mixins/responsive_font.scss';
+
+.account {
+  flex-grow: 1;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & button {
+      max-width: max-content;
+    }
+
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      @include responsive_font(12, 10);
+    }
+
+    small {
+      flex-grow: 1;
+      min-width: 200px;
+      opacity: 0.6;
+      font-weight: 600;
+      @include responsive_font(12, 10);
+    }
+
+    span {
+      padding-left: 0.6rem;
+      white-space: nowrap;
+      @include responsive_font(12, 10);
+    }
+
+    @media (max-width: $md) {
+      div {
+        flex-direction: column;
+
+        > div:first-child {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+// :root {
+//   &[data-theme='light'] {
+//     --bg: #f0f0f0;
+//     --frame: #fff;
+//     --on-frame: rgb(90, 100, 126);
+//     --hr: hsla(0, 0%, 20%, 0.1);
+
+//     // Colors
+//     --color: #333333;
+//     --grey: #818181;
+//     --accent: #9ac4ff;
+//     --new: #0068ff;
+//     --new-op: rgba(0, 104, 255, 0.1);
+//     --green: #1e8e6f;
+//     --green-op: rgba(30, 142, 111, 0.1);
+//     --red: #d9534f;
+//     --red-op: rgba(217, 83, 79, 0.1);
+//     --yellow: #f5b342;
+//     --yellow-op: rgba(245, 179, 66, 0.1);
+//   }
+
+//   &[data-theme='dark'] {
+//     --bg: #2b2b2b;
+//     --frame: #1a1a1a;
+//     --on-frame: #232323;
+//     --hr: rgba(255, 255, 255, 0.1);
+
+//     // Colors
+//     --color: rgba(255, 255, 255, 0.87);
+//     --grey: #818181;
+//     --accent: #646cff;
+//     --new: #4db4ff;
+//     --new-op: rgba(77, 181, 255, 0.1);
+//     --green: #4dff7e;
+//     --green-op: rgba(77, 255, 127, 0.1);
+//     --red: #ff4d4d;
+//     --red-op: rgba(255, 77, 77, 0.1);
+//     --yellow: #fff84d;
+//     --yellow-op: rgba(255, 249, 77, 0.1);
+//   }
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --bg: #2b2b2b;
+//     --frame: #1a1a1a;
+//     --color: rgba(255, 255, 255, 0.87);
+//     --accent: #646cff;
+//     --frame-color: #232323;
+
+//     --yellow: #fff84d;
+//   }
+// }
+
+
+// Для ДГТУ 
+:root {
+  &[data-theme='light'] {
+    --bg: #fff;
+    --frame: #E7E9ED;
+    --on-frame: #11519C;
+    --hr: #D2DAE3;
+
+    // Colors
+    --color: #38424F;
+    --grey: #80889D;
+    --accent: #0E468B;
+
+
+    --new: #0068ff;
+    --new-op: rgba(0, 104, 255, 0.1);
+    --green: #1e8e6f;
+    --green-op: rgba(30, 142, 111, 0.1);
+    --red: #d9534f;
+    --red-op: rgba(217, 83, 79, 0.1);
+    --yellow: #f5b342;
+    --yellow-op: rgba(245, 179, 66, 0.1);
+  }
+
+  &[data-theme='dark'] {
+    --bg: #1E1E1E;
+    --frame: #313745;
+    --on-frame: #232935;
+    --hr: #394358 ;
+
+    // Colors
+    --color: #F4F4F4;
+    --grey: #9EA6BB;
+    --accent: #0E468B;
+
+
+
+    --new: #4db4ff;
+    --new-op: rgba(77, 181, 255, 0.1);
+    --green: #4dff7e;
+    --green-op: rgba(77, 255, 127, 0.1);
+    --red: #ff4d4d;
+    --red-op: rgba(255, 77, 77, 0.1);
+    --yellow: #fff84d;
+    --yellow-op: rgba(255, 249, 77, 0.1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1E1E1E;
+    --frame: #313745;
+    --on-frame: #232935;
+    --hr: #394358 ;
+
+    // Colors
+    --color: #F4F4F4;
+    --grey: #9EA6BB;
+    --accent: #0E468B;
+  }
+}

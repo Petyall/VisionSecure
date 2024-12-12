@@ -1,0 +1,39 @@
+@import '../../../../../styles/variables/system.scss';
+@import '../../../../../styles/variables/breakpoints.scss';
+
+.burger {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: $borderRadiusSm;
+  border: 2px solid var(--bg);
+  transition: all 0.15s ease-in;
+
+  &:active,
+  &:focus {
+    transition: all 0.2s ease-out;
+    border: 2px solid var(--accent);
+
+    svg {
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  svg {
+    width: 16px;
+    transition: all 0.15s ease-in;
+  }
+
+  @media (min-width: $md) {
+    &:hover {
+      transition: all 0.2s ease-out;
+      border: 2px solid var(--accent);
+
+      svg {
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}

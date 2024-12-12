@@ -1,0 +1,31 @@
+@import '../../../../styles/variables/system.scss';
+@import '../../../../styles/assets/mixins/responsive_font.scss';
+
+.about {
+  flex-grow: 1;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      @include responsive_font(14, 12);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      li {
+        @include responsive_font(14, 12);
+      }
+    }
+
+    .imageContainer {
+      border-radius: $borderRadiusMd;
+      overflow: hidden;
+    }
+  }
+}

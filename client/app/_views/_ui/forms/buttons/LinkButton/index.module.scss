@@ -1,0 +1,20 @@
+@import '../../../../../styles/variables/system.scss';
+@import '../../../../../styles/assets/mixins/responsive_font.scss';
+
+.linkButton {
+    padding: 0.6rem 1.2em;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 12px;
+    border: 2px solid var(--accent);
+    color: var(--color);
+
+    svg {
+        color: inherit;
+    }
+
+    span {
+        color: inherit;
+    }
+}

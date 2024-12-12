@@ -1,0 +1,5 @@
+.signUp {
+  &[data-focus='true'] {
+    touch-action: pan-x;
+  }
+}

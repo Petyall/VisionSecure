@@ -1,0 +1,44 @@
+{
+  "name": "tcsd-cam-vision",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@zxcvbn-ts/core": "^3.0.4",
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "bcrypt-ts": "^5.0.2",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "cookies-next": "^4.3.0",
+    "framer-motion": "^11.5.4",
+    "hls.js": "^1.5.17",
+    "next": "^14.2.7",
+    "next-auth": "^4.24.7",
+    "prisma": "^5.19.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.78.0",
+    "sharp": "^0.33.5",
+    "zustand": "^4.5.5",
+    "zxcvbn-typescript": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
+  }
+}

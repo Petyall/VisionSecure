@@ -1,0 +1,8 @@
+.head {
+  position: sticky;
+  z-index: 99;
+  top: 0px;
+  background: var(--bg);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hr);
+}

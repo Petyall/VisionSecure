@@ -1,0 +1,19 @@
+// Gride breakpoints
+
+$max: 4000px; // Full
+$el: 1200px; // Extra large
+$mg: 1110px; // Medium large
+$lg: 992px; // Large
+
+$md: 768px; // Medium
+$sm: 576px; // Small
+$min: 320px; // Extra small
+
+:export {
+  max: $max;
+  el: $el;
+  lg: $lg;
+  md: $md;
+  sm: $sm;
+  min: $min;
+}

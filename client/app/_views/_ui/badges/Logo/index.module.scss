@@ -1,0 +1,12 @@
+@import '../../../../styles/assets/mixins/animations.scss';
+
+.logo {
+  svg {
+    @include animation(spin, 2s, linear);
+  }
+
+  span {
+    font-weight: 200;
+    letter-spacing: 2.5px;
+  }
+}

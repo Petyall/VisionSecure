@@ -1,0 +1,14 @@
+@import '../../../styles/variables/system.scss';
+
+.cameraFrame {
+  flex-grow: 1;
+
+  .cameraWrapper {
+    position: relative;
+    flex: -webkit-fill-available;
+    background-color: var(--frame);
+    border-radius: $borderRadiusSm;
+    overflow: hidden;
+    height: 55dvh;
+  }
+}

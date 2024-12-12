@@ -1,0 +1,58 @@
+@import '../../../../styles/assets/mixins/responsive_font.scss';
+
+.title {
+  flex-grow: 1;
+  font-weight: 700;
+
+  &[data-text-align='left'] {
+    text-align: left;
+  }
+
+  &[data-text-align='center'] {
+    text-align: center;
+  }
+
+  &[data-text-align='right'] {
+    text-align: right;
+  }
+
+  &[data-text-align='justify'] {
+    text-align: justify;
+  }
+
+  &[data-line-height='1.5'] {
+    line-height: 1.5;
+  }
+
+  &[data-line-height='2'] {
+    line-height: 2;
+  }
+}
+
+h6.title {
+  @include responsive_font(16, 14);
+  font-weight: 500;
+}
+
+h5.title {
+  @include responsive_font(18, 16);
+  font-weight: 500;
+}
+
+h4.title {
+  @include responsive_font(20, 18);
+  font-weight: 500;
+}
+
+h3.title {
+  @include responsive_font(22, 20);
+  font-weight: 600;
+}
+
+h2.title {
+  @include responsive_font(32, 22);
+}
+
+h1.title {
+  @include responsive_font(42, 32);
+}

@@ -1,0 +1,69 @@
+@import '../../../../styles/assets/mixins/responsive_font.scss';
+
+p.text {
+  color: var(--color);
+
+  &[data-font-size='min'] {
+    @include responsive_font(12, 9);
+  }
+
+  &[data-font-size='sm'] {
+    @include responsive_font(14, 12);
+  }
+
+  &[data-font-size='md'] {
+    @include responsive_font(16, 14);
+  }
+
+  &[data-font-size='lg'] {
+    @include responsive_font(20, 16);
+  }
+
+  &[data-font-size='el'] {
+    @include responsive_font(24, 20);
+  }
+
+  &[data-font-size='max'] {
+    @include responsive_font(32, 24);
+  }
+
+  &[data-font-weight='normal'] {
+    font-weight: normal;
+  }
+
+  &[data-font-weight='bold'] {
+    font-weight: bold;
+  }
+
+  &[data-font-weight='lighter'] {
+    font-weight: lighter;
+  }
+
+  &[data-font-weight='700'] {
+    font-weight: 700;
+  }
+
+  &[data-text-align='left'] {
+    text-align: left;
+  }
+
+  &[data-text-align='center'] {
+    text-align: center;
+  }
+
+  &[data-text-align='right'] {
+    text-align: right;
+  }
+
+  &[data-text-align='justify'] {
+    text-align: justify;
+  }
+
+  &[data-line-height='1.5'] {
+    line-height: 1.5;
+  }
+
+  &[data-line-height='2'] {
+    line-height: 2;
+  }
+}

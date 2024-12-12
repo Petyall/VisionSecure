@@ -1,0 +1,32 @@
+@import '../../../styles/variables/breakpoints.scss';
+
+$maxContainerWidth: 1600px;
+$padding: 12vw;
+$mobilePadding: 15px;
+
+.container {
+  margin: 0 auto;
+  padding: $mobilePadding;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: $maxContainerWidth;
+  width: 100%;
+
+  &[data-hr='true'] {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--bg);
+  }
+
+  @media (min-width: $min) and (max-width: $el) {
+    padding: 0 $padding;
+  }
+
+  @media (min-width: $min) {
+    padding: 0 $mobilePadding;
+  }
+
+  @media (max-width: $el) {
+    padding: 0 $mobilePadding;
+  }
+}

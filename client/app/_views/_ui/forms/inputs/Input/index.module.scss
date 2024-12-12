@@ -1,0 +1,135 @@
+@import '../../../../../styles/variables/system.scss';
+@import '../../../../../styles/variables/breakpoints.scss';
+@import '../../../../../styles/assets/mixins/responsive_font.scss';
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  label.label {
+  }
+
+  div.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  input {
+    outline: none;
+    padding: 0.6em 1.2em;
+    flex-grow: 1;
+    height: 100%;
+
+    border-radius: $borderRadiusMd;
+    border: 2px solid var(--grey);
+    background-color: var(--frame);
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+
+    @include responsive_font(16, 14);
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color);
+
+    &::placeholder {
+      @include responsive_font(16, 14);
+      font-weight: 500;
+      line-height: normal;
+      color: var(--color);
+      opacity: 0.5;
+    }
+
+    &:focus {
+      transition: all 0.2s ease-out;
+      border: 2px solid var(--accent);
+    }
+
+    &:active {
+      transition: all 0.2s ease-out;
+      border: 2px solid var(--accent);
+    }
+
+    &[type='password'] {
+      padding-right: 55px;
+    }
+
+    @media (min-width: $mg) {
+      &:hover {
+        transition: all 0.2s ease-out;
+        border: 2px solid var(--accent);
+      }
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      border: 2px solid var(--frame);
+
+      &:hover {
+        cursor: no-drop;
+        border: 1px solid var(--frame);
+      }
+    }
+  }
+
+  &[data-error='true'] {
+    input {
+      border: 2px solid var(--red);
+    }
+
+    & label.label {
+      color: var(--red);
+    }
+  }
+
+  .controls {
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: $borderRadiusSm;
+    background-color: var(--frame);
+
+    .eyeButton,
+    .closeButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color);
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media (min-width: $mg) {
+        &:hover svg {
+          transition: all 0.2s ease-out;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  span.clue,
+  span.error {
+    padding-left: 1rem;
+    word-break: break-all;
+    font-weight: 400;
+    @include responsive_font(12, 12);
+    line-height: normal;
+    color: var(--color);
+    opacity: 0.6;
+  }
+
+  span.error {
+    color: var(--red);
+  }
+}

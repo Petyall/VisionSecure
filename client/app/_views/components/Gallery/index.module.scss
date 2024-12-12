@@ -1,0 +1,6 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 3fr));
+  gap: 20px;
+}

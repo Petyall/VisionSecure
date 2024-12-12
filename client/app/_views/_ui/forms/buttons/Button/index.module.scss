@@ -1,0 +1,64 @@
+@import '../../../../../styles/variables/system.scss';
+@import '../../../../../styles/assets/mixins/responsive_font.scss';
+
+.button {
+  flex-grow: 1;
+  padding: 0.6rem 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: $borderRadiusMd;
+  border: 1px solid transparent;
+  background-color: var(--on-frame);
+
+  svg {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+
+  span {
+    @include responsive_font(16, 14);
+    font-weight: 500;
+    color: #fff;
+    font-family: inherit;
+  }
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  &[type='reset'] {
+    border: 2px solid var(--red);
+    background-color: var(--red-op);
+
+    &:hover {
+      border: 2px solid var(--red-op);
+      background-color: var(--red);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    border: 2px solid var(--grey);
+    background-color: var(--grey);
+    opacity: 0.6;
+
+    &:hover {
+      border-color: transparent;
+      border: 2px solid var(--grey);
+      background-color: var(--grey);
+    }
+  }
+}

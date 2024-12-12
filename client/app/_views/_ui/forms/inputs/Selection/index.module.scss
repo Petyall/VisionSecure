@@ -1,0 +1,71 @@
+@import '../../../../../styles/variables/system.scss';
+@import '../../../../../styles/assets/mixins/responsive_font.scss';
+
+.selection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  // label.label {
+
+  // }
+
+  span.clue {
+    @include responsive_font(12, 10);
+    font-weight: 300;
+    color: var(--color);
+    opacity: 0.6;
+  }
+
+  .control {
+    padding: 10px;
+    background-color: var(--bg);
+    border-radius: $borderRadiusMd;
+    border: 2px solid var(--frame);
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      border: 2px solid var(--accent);
+    }
+  }
+
+  ul.menu {
+    position: absolute;
+    top: 74px;
+    z-index: 2;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: $borderRadiusMd;
+    border: 2px solid var(--accent);
+    background-color: var(--frame);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+
+    li {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid var(--bg);
+      background-color: var(--frame);
+
+      &:hover {
+        background-color: var(--accent);
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

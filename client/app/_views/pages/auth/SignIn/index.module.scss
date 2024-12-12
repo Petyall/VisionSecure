@@ -1,0 +1,18 @@
+.signIn {
+  position: fixed;
+  z-index: 9;
+  inset: 0;
+  padding-top: 52px;
+
+  display: flex;
+  background-color: var(--bg);
+
+  &[data-focus='true'] {
+    touch-action: pan-x;
+  }
+
+  .frame {
+    display: flex;
+    max-width: 600px;
+  }
+}

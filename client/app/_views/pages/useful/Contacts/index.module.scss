@@ -1,0 +1,9 @@
+.contacts {
+  flex-grow: 1;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../../../styles/variables/breakpoints.scss';
+
+.shrinkButton {
+  position: absolute;
+  z-index: 9;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  border: 2px solid var(--accent);
+  background-color: var(--frame);
+
+  svg {
+    width: 100%;
+    color: var(--color);
+    transition: all 0.2s ease-in;
+  }
+
+  @media (min-width: $mg) {
+    &:hover svg {
+      color: var(--accent);
+      transition: all 0.2s ease-in;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import '../../../../styles/variables/system.scss';
+@import '../../../../styles/variables/breakpoints.scss';
+
+.fade {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: $md) {
+        padding: 0;
+    }
+}
+
+.modalWindow {
+    position: relative;
+    padding: 20px 30px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90dvh;
+    border-radius: $borderRadiusMd;
+    background-color: var(--frame);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: $md) {
+        padding: 10px 15px 10px 20px;
+        max-height: 100dvh;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    button.close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: var(--borderRadiusSm);
+        transition: all .2s ease;
+
+        svg {
+            min-width: 12px;
+            color: var(--grey);
+        }
+
+        &:hover {
+            transition: all .15s ease-in-out;
+            background-color: var(--frame);
+
+            svg {
+                color: var(--color);
+            }
+        }
+    }
+}
+
+.modalHead {
+    position: relative;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--hr);
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        height: 100%;
+        background-color: var(--accent);
+        border-radius: 2px;
+    }
+}
+
+.modalBody {
+    padding-right: 10px;
+    max-height: 60%;
+    overflow-y: auto;
+
+    @media (max-width: $md) {
+        max-height: 85%;
+    }
+}
+
+.modalFooter {
+    padding: 1rem 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid var(--hr);
+}

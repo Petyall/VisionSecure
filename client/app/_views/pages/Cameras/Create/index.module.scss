@@ -1,0 +1,22 @@
+@import '../../../../styles/variables/breakpoints.scss';
+
+.cameraCreate {
+    flex-grow: 1;
+
+    &[data-focus='true'] {
+        touch-action: pan-x;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        form {
+            @media (min-width: $md) {
+                max-width: 50%;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../../../styles/variables/system.scss';
+
+.favoriteButton {
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: $borderRadiusMd;
+  border: 1px solid transparent;
+  background-color: var(--on-frame);
+
+  svg {
+    color: var(--color);
+  }
+
+  &[data-favorite='true'] {
+    svg {
+      color: var(--yellow);
+    }
+  }
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &:hover {
+    border-color: var(--accent);
+    transition: all 0.15s ease-out;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+    transition: all 0.15s ease-out;
+  }
+}
