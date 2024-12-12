@@ -3,9 +3,9 @@ import { Home } from '@/app/_views/pages/Home';
 
 export default function HomePage() {
   const seo = {
-    title: 'CamVision',
+    title: 'VisionSecure',
     description:
-      'CamVision предоставляет интуитивно понятный интерфейс для наблюдения за видео в реальном времени.',
+      'VisionSecure предоставляет интуитивно понятный интерфейс для наблюдения за видео в реальном времени.',
   };
 
   return (

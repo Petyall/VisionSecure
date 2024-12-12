@@ -12,7 +12,7 @@ const Logo: FC = () => {
     <Link href={isAuth ? '/' : '/auth/signin'} className={cls.logo}>
       <Flex gap=".5rem" alignItems="flex-end">
         <LogoIcon />
-        <span>CamVision</span>
+        <span>VisionSecure</span>
       </Flex>
     </Link>
   );

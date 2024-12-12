@@ -1,6 +1,6 @@
 export const requestToRegistrationMailForm = `
 mailto:nickitadatsky@gmail.com&body=Здравствуйте, Никита Максимович! 
-Прошу Вас зарегистрировать меня в системе и выслать мне пароль по ...?subject=Выдача доступа к системе CamVision
+Прошу Вас зарегистрировать меня в системе и выслать мне пароль по ...?subject=Выдача доступа к системе VisionSecure
 `;
 
 export const P108 =

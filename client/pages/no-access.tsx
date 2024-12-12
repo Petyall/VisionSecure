@@ -3,9 +3,9 @@ import { NoAccess } from '@/app/_views/pages/dashboard/NoAccess';
 
 export default function HomePage() {
   const seo = {
-    title: 'CamVision',
+    title: 'VisionSecure',
     description:
-      'CamVision предоставляет интуитивно понятный интерфейс для наблюдения за видео в реальном времени.',
+      'VisionSecure предоставляет интуитивно понятный интерфейс для наблюдения за видео в реальном времени.',
   };
 
   return (

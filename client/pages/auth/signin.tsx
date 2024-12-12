@@ -6,7 +6,7 @@ const SignInPage: NextPage = ({}) => {
   const seo = {
     title: 'Авторизация',
     description:
-      'Вход в систему TCSD CamVision, ДГТУ начинается на этой стартовой странице.',
+      'Вход в систему TCSD VisionSecure, ДГТУ начинается на этой стартовой странице.',
   };
 
   return (

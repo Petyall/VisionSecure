@@ -15,7 +15,7 @@ const About: FC = () => {
         <article>
           <Flex flexDirection="column">
             <Flex flexGrow={1} flexDirection="column">
-              <Title>CamVision</Title>
+              <Title>VisionSecure</Title>
               {camVisionInfo.map((item, idx) => (
                 <article key={idx} className={cls.article}>
                   <Title type="h4">{item.title}</Title>

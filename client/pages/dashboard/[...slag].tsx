@@ -13,9 +13,9 @@ const DashboardPage: NextPage = () => {
   const { user, isAuth } = useUserStore();
 
   const seo = {
-    title: 'CamVision',
+    title: 'VisionSecure',
     description:
-      'CamVision предоставляет интуитивно понятный интерфейс для наблюдения за видео в реальном времени.',
+      'VisionSecure предоставляет интуитивно понятный интерфейс для наблюдения за видео в реальном времени.',
   };
 
   if (!isAuth) {
